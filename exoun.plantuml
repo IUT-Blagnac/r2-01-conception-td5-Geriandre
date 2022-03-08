@@ -1,0 +1,15 @@
+@startuml
+
+usecase chantier as "Gérer ses chantiers"
+usecase artisans as "Gérer ses artisans"
+usecase aff as "Gérer quels artisans sont\naffectés à quels chantiers"
+usecase pay as "Calculer automatiquement\nla paye d’un artisan"
+
+actor Entreprise 
+
+Entreprise --> chantier
+Entreprise --> artisans
+Entreprise --> aff
+Entreprise --> pay
+
+@enduml
